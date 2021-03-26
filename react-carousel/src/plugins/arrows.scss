@@ -1,13 +1,13 @@
-
 $clickableAreaSize: 42px;
-$clickableAreaColor: #7b59ff;
-$clickableAreaColor__hover: lighten(#7b59ff, 3%);
-$disabledButtonColor: #cccccc;
+$clickableAreaColor: transparent;
+$clickableAreaColor__hover: transparent;
+$disabledButtonColor: transparent;
 
 $arrowColor: #fff;
-$arrowColor__hover: #fff;
+$arrowColor__hover: #dbc04a;
 $arrowSize: 10px;
 $arrowWeight: 3px;
+$disabledArrowColor: #ccc;
 
 .BrainhubCarousel__arrows {
   position: relative;
@@ -58,6 +58,10 @@ $arrowWeight: 3px;
 
   &:disabled {
     background-color: $disabledButtonColor;
+    span {
+      border-color: $disabledArrowColor;
+      margin: 0;
+    }
   }
 }
 
